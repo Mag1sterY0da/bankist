@@ -1,0 +1,123 @@
+/*************************/
+/* BELOW 1200px (Landscape Tablets) */
+/*************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .app {
+    grid-template-rows: auto repeat(3, 20rem) auto;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .form__label {
+    font-size: 1.4rem;
+  }
+
+  .movements__type {
+    font-size: 1.3rem;
+    padding: 0.2rem 1.2rem;
+  }
+
+  .movements__date {
+    font-size: 1.3rem;
+  }
+
+  .movements__value {
+    font-size: 2rem;
+  }
+
+  .logout-timer {
+    font-size: 1.5rem;
+  }
+
+}
+
+/*************************/
+/* BELOW 944px (Tablets) */
+/*************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  nav {
+    margin: 0 2rem;
+  }
+
+  .app {
+    margin: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 60rem 20rem auto;
+  }
+
+  h2 {
+    width: auto;
+  }
+
+  .form.form--loan {
+    grid-template-columns: 2.5fr 1fr;
+  }
+
+  .balance {
+    grid-column: 1 / span 3;
+    margin-bottom: 0;
+  }
+
+  .movements {
+    grid-row: auto;
+    grid-column: 1 / span 3;
+  }
+
+  .summary {
+    grid-row: 4 / 5;
+    grid-column: 1 / span 2;
+  }
+
+  .logout-timer {
+    grid-row: 4 / 5;
+  }
+
+  .operation {
+    justify-content: flex-start;
+  }
+
+}
+
+/*************************/
+/* BELOW 752px (Smaller tablets) */
+/*************************/
+
+@media (max-width: 47em) {
+  .app {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 60rem 15rem 15rem 15rem auto;
+  }
+
+  .balance, .movements, .operation, .summary, .logout-timer {
+    grid-column: 1;
+  }
+
+  .summary {
+    justify-content: space-around;
+  }
+
+  .btn--sort {
+    margin-left: 0;
+  }
+
+  .summary {
+    grid-row: 6;
+  }
+
+  .logout-timer {
+    text-align: center;
+    grid-row: 7;
+  }
+}
