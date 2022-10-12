@@ -107,7 +107,7 @@ img {
   align-items: center;
   height: 9rem;
   width: 100%;
-  padding: 0 6rem;
+  /*padding: 0 6rem;*/
   z-index: 100;
   margin-bottom: 3.2rem;
   position: relative;
@@ -117,6 +117,7 @@ img {
 .nav.sticky {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
+  padding: 0 6rem;
 }
 
 .nav__logo {
