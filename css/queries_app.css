@@ -35,7 +35,6 @@
   .logout-timer {
     font-size: 1.5rem;
   }
-
 }
 
 /*************************/
@@ -87,7 +86,6 @@
   .operation {
     justify-content: flex-start;
   }
-
 }
 
 /*************************/
@@ -100,7 +98,11 @@
     grid-template-rows: auto 60rem 15rem 15rem 15rem auto;
   }
 
-  .balance, .movements, .operation, .summary, .logout-timer {
+  .balance,
+  .movements,
+  .operation,
+  .summary,
+  .logout-timer {
     grid-column: 1;
   }
 
